@@ -46,7 +46,7 @@
     </div>
 
     <script>
-    document.getElementById("myForm").addEventListener("submit", async (e)
+    document.getElementById("myForm").addEventListener("submit", async (e) => {
      e.preventDefault(); //Prevents page refresh
 
      const form = {
@@ -60,7 +60,10 @@
         body: JSON.stringify(form),
      });
 
-    );
+     const result = await response.json();
+     alert(result.message);
+
+    });
     </script>
     
 </body>
