@@ -1,4 +1,4 @@
-//API with Express
+//API with Express Node
 const express = require("express");
 const cors = require("cors");
 
